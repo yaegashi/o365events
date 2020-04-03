@@ -1,0 +1,4 @@
+.go-version
+*.json
+*.xlsx
+/dist
