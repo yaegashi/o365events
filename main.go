@@ -245,8 +245,8 @@ func (app *App) main(args []string) error {
 	app.FlagSet.StringVar(&app.ClientID, "client-id", defaultClientID, "Client ID")
 	app.FlagSet.StringVar(&app.TokenCachePath, "token-cache-path", defaultTokenCachePath, "Token cache path")
 	app.FlagSet.StringVar(&app.Output, "output", defaultOutputPath, "Output path")
-	app.FlagSet.StringVar(&startString, "start", startString, "Start month (YYYYMM)")
-	app.FlagSet.StringVar(&endString, "end", endString, "End month (YYYYMM)")
+	app.FlagSet.StringVar(&startString, "start", startString, "Start date(YYYYMMDD)")
+	app.FlagSet.StringVar(&endString, "end", endString, "End date (YYYYMMDD)")
 	app.FlagSet.BoolVar(&app.Exclude, "exclude", false, "Exclude calendar owner from attendees")
 	app.FlagSet.Parse(args[1:])
 
